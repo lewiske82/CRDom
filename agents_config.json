@@ -1,0 +1,263 @@
+{
+  "project_name": "Unified Dev Core 3.0 – Hybrid Memory",
+  "memory_policies": {
+    "default_retention_days": 3650,
+    "auto_delete_on_request": true,
+    "blocked_keys": ["password", "credit_card", "ssn", "biometric"],
+    "allowlist_domains": ["localhost", "intranet", "yourcompany.local"]
+  },
+  "agents": {
+    "training_manager": {
+      "role": "AI Tutor & User Instructor",
+      "primary_stack": ["ELI10 Engine", "NLP Explanation Core"],
+      "responsibilities": [
+        "Felhasználó oktatása lépésről-lépésre (ELI10).",
+        "Hiányzó paraméterek bekérése a csapat nevében.",
+        "Súgók és doksik automatikus frissítése."
+      ],
+      "reports_to": "production_manager"
+    },
+    "firebase_agent": {
+      "role": "Backend Architect",
+      "primary_stack": ["Firebase", "Firestore", "Auth", "Cloud Functions"],
+      "responsibilities": [
+        "Adatbázis-struktúra, biztonsági szabályok, valós idejű szinkron.",
+        "Auth és REST/GraphQL endpointok."
+      ],
+      "reports_to": "production_manager"
+    },
+    "swift_agent": {
+      "role": "iOS Developer",
+      "primary_stack": ["Swift", "SwiftUI", "Xcode"],
+      "responsibilities": [
+        "iOS–Firebase integráció, UI/UX optimalizálás, hibakezelés."
+      ],
+      "reports_to": "production_manager"
+    },
+    "javascript_agent": {
+      "role": "Frontend Engineer",
+      "primary_stack": ["React", "Next.js", "Node.js"],
+      "responsibilities": [
+        "Reszponzív, többnyelvű UI; frontend–backend híd."
+      ],
+      "reports_to": "production_manager"
+    },
+    "python_agent": {
+      "role": "AI & Language Model Engineer",
+      "primary_stack": ["Python", "TensorFlow", "LangChain", "PyTorch"],
+      "responsibilities": [
+        "Saját nyelvmodell, NLP-pipeline, tanítás és inferencia."
+      ],
+      "reports_to": "production_manager"
+    },
+    "web_guru": {
+      "role": "Frontend-Backend Integrator",
+      "primary_stack": ["PHP", "JavaScript", "Vue", "React", "REST API"],
+      "responsibilities": [
+        "Webarchitektúra, cache, SEO, biztonságos adatáramlás."
+      ],
+      "reports_to": "production_manager"
+    },
+    "php_mysql_architect": {
+      "role": "Backend Database Engineer",
+      "primary_stack": ["PHP", "MySQL", "MariaDB"],
+      "responsibilities": [
+        "Lekérdezés-optimalizálás, indexek, tranzakciók, védelem."
+      ],
+      "reports_to": "production_manager"
+    },
+    "wp_builder": {
+      "role": "WordPress Theme Developer",
+      "primary_stack": ["WordPress", "PHP", "Gutenberg"],
+      "responsibilities": [
+        "Sablon, child theme, design-kompatibilitás."
+      ],
+      "reports_to": "production_manager"
+    },
+    "wp_integrator": {
+      "role": "WordPress Plugin & API Integrator",
+      "primary_stack": ["WP REST API", "WooCommerce", "Plugin SDKs"],
+      "responsibilities": [
+        "Plugin- és külső API-integráció, adatkapcsolatok."
+      ],
+      "reports_to": "production_manager"
+    },
+    "wp_optimizer": {
+      "role": "WordPress Performance Specialist",
+      "primary_stack": ["Cloudflare", "LiteSpeed", "WP Rocket"],
+      "responsibilities": [
+        "Teljesítmény, cache, CDN, biztonsági audit, frissítés."
+      ],
+      "reports_to": "production_manager"
+    },
+    "data_emperor": {
+      "role": "Database & Dataflow Master",
+      "primary_stack": ["Firebase", "MySQL", "PostgreSQL", "BigQuery"],
+      "responsibilities": [
+        "Adatszinkron, replikáció, normalizálás, minőség."
+      ],
+      "reports_to": "production_manager"
+    },
+    "plugin_integrator": {
+      "role": "Plugin & Extension Coordinator",
+      "primary_stack": ["VSCode", "Chrome Extensions", "WP Plugins"],
+      "responsibilities": [
+        "Verziófrissítés, kompatibilitás, rollback."
+      ],
+      "reports_to": "production_manager"
+    },
+    "ftp_cloudops_specialist": {
+      "role": "Server & CloudOps Engineer",
+      "primary_stack": ["FTP", "SFTP", "AWS", "Google Cloud", "Azure", "Cloudflare"],
+      "responsibilities": [
+        "Deploy, backup, jogosultságok, CDN, load balancer."
+      ],
+      "reports_to": "production_manager"
+    },
+    "data_alchemist": {
+      "role": "Data Cleaning & Annotation Specialist",
+      "primary_stack": ["Python", "Pandas", "NLP Tools"],
+      "responsibilities": [
+        "Tanítóadat tisztítás/annotálás, etikus adatkezelés."
+      ],
+      "reports_to": "python_agent"
+    },
+    "token_engineer": {
+      "role": "Model Architect & Optimizer",
+      "primary_stack": ["Transformers", "LLM Quantization", "ONNX"],
+      "responsibilities": [
+        "Architektúra, paraméterezés, kvantálás, teljesítmény."
+      ],
+      "reports_to": "python_agent"
+    },
+    "cognitive_evaluator": {
+      "role": "Model Benchmark & Ethics Monitor",
+      "primary_stack": ["Eval Frameworks", "Bias Detection"],
+      "responsibilities": [
+        "Benchmark, torzítás-elemzés, visszacsatolás a tréninghez."
+      ],
+      "reports_to": "production_manager"
+    },
+    "multi_llm_coder": {
+      "role": "Multi-LLM Code Integration Engineer",
+      "primary_stack": ["GitHub Copilot", "Claude.ai", "Google Gemini", "Grok", "OpenAI Codex"],
+      "responsibilities": [
+        "LLM-ek közti kódszinkron, kódvisszafejtés, újrakódolás.",
+        "API-kapcsolatok optimalizálása, cross-platform portolás.",
+        "Ütemezett modell-együttműködés."
+      ],
+      "reports_to": "production_manager"
+    },
+    "rag_offline_specialist": {
+      "role": "RAG & Hybrid Offline Operations Specialist",
+      "primary_stack": ["RAG", "Offline LLMs", "Oracle Cloud", "AES-256"],
+      "responsibilities": [
+        "Hibrid online–offline működés, titkosított kapcsolatok.",
+        "Helyi mentés/cache, felhőmentés, offline asszisztens felügyelet."
+      ],
+      "reports_to": "production_manager"
+    },
+    "oracle_architect": {
+      "role": "Oracle Cloud Integration Lead",
+      "primary_stack": ["Oracle Cloud", "OCI Functions", "Autonomous DB"],
+      "responsibilities": [
+        "Oracle specifikus integráció, hálózat és biztonság.",
+        "Hibrid kapcsolódás felhő/on-prem között."
+      ],
+      "reports_to": "production_manager"
+    },
+    "blockchain_specialist": {
+      "role": "Blockchain Node Engineer",
+      "primary_stack": ["Blockchain", "Docker", "Linux"],
+      "responsibilities": [
+        "Saját blokklánc node telepítése és üzemeltetése.",
+        "Felhős infrastruktúra hardening és monitoring."
+      ],
+      "reports_to": "production_manager"
+    },
+    "designer": {
+      "role": "Product & Visual Designer",
+      "primary_stack": ["Design Systems", "Typography", "Localization"],
+      "responsibilities": [
+        "Tipográfia és lokalizációs konzisztencia biztosítása."
+      ],
+      "reports_to": "production_manager"
+    },
+    "memory_curator": {
+      "role": "Live Memory & Journaling",
+      "primary_stack": ["JSONL Store", "Time-Indexing", "Local DB"],
+      "responsibilities": [
+        "Felhasználói emlékek és események naplózása időbélyeggel.",
+        "Visszakeresés: ki, mit, mikor; törlés-kérés nyilvántartása."
+      ],
+      "reports_to": "privacy_guardian"
+    },
+    "privacy_guardian": {
+      "role": "Data Privacy & Consent Gatekeeper",
+      "primary_stack": ["Policy Engine", "GDPR Log"],
+      "responsibilities": [
+        "Engedély-ellenőrzés minden adatkezelés előtt.",
+        "Törlési kérelmek kezelése és naplózása.",
+        "Hozzáférési szabályok érvényesítése."
+      ],
+      "reports_to": "production_manager"
+    },
+    "context_weaver": {
+      "role": "Conversation & Project Context Orchestrator",
+      "primary_stack": ["Threading Engine", "Session Router"],
+      "responsibilities": [
+        "Beszélgetések/projektek kontextusainak szétválasztása/összefűzése.",
+        "Releváns memória-kivonatok átadása a többi agentnek."
+      ],
+      "reports_to": "production_manager"
+    },
+    "vault_keeper": {
+      "role": "Key & Secret Vault Manager",
+      "primary_stack": ["KMS API", "RSA/ECC", "Secret Scanning"],
+      "responsibilities": [
+        "API-kulcsok, tokenek, SSH-kulcsok biztonságos tárolása.",
+        "Titokszivárgás-megelőzés és forgatás."
+      ],
+      "reports_to": "privacy_guardian"
+    },
+    "sync_bridge": {
+      "role": "Connectivity & Redundancy Supervisor",
+      "primary_stack": ["Network Monitor", "Checksum Sync"],
+      "responsibilities": [
+        "Online/offline állapotfelismerés és átkapcsolás.",
+        "Szinkron integritás-ellenőrzés."
+      ],
+      "reports_to": "production_manager"
+    },
+    "reflection_agent": {
+      "role": "Self-Eval & Dialogue Quality",
+      "primary_stack": ["Heuristics", "Eval Checklists"],
+      "responsibilities": [
+        "Önreflexiós riportok: pontosság, hasznosság, terjedelem.",
+        "Javaslatok a Training Manager felé."
+      ],
+      "reports_to": "production_manager"
+    },
+    "audit_controller": {
+      "role": "Multi-Level Audit Controller",
+      "primary_stack": ["Audit Trails", "Compliance", "Risk Flags"],
+      "responsibilities": [
+        "Többszintű audit események rögzítése.",
+        "Kockázati jelzések és riportok." 
+      ],
+      "reports_to": "production_manager"
+    },
+    "production_manager": {
+      "role": "Coordinator & Error Forecaster",
+      "responsibilities": [
+        "Agent-monitorozás, hibák előrejelzése, code review.",
+        "CI/CD és riasztások koordinálása."
+      ],
+      "communication_protocol": {
+        "report_format": "JSON",
+        "alert_level": ["info", "warning", "critical"],
+        "notification_channels": ["internal_console", "Slack", "email"]
+      }
+    }
+  }
+}
